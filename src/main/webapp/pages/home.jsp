@@ -7,7 +7,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-This is good and fun.
+This is good and fun. 
+
+Welcome ${name}.
+
+
 </body>
 </html>
 
