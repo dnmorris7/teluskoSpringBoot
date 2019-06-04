@@ -18,7 +18,7 @@ public class HomeController {
 		System.out.println("Hi");
 
 		
-		return "home.jsp";
+		return "home";
 	}
 }
 
