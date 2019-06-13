@@ -11,12 +11,12 @@ public class HomeController {
 
 	// return the home page
 	@RequestMapping("home")
-	public ModelAndView home(@RequestParam("name") String myName) {
-		myName = "David";
-		ModelAndView mv = new ModelAndView();
-		System.out.println("Page Accessed. Hello " +  myName);
+	public ModelAndView home(Alien alien) {
+		/*myName = "David";*/
+		/*System.out.println("Page Accessed. Hello " +  alien);*/
 		
-		mv.addObject("name", myName);
+		ModelAndView mv = new ModelAndView();
+		mv.addObject("obj", alien);
 		mv.setViewName("home");
 		return mv;
 	}
