@@ -37,6 +37,11 @@ public class SelenTestChrome {
 	
 	@AfterClass
 	public static void tearDownAfterClass() throws Exception {
+
+
+		Thread.sleep(3000);
+		driver.close();
+
 	}
 	
 	@Test

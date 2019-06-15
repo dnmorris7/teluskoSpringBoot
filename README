@@ -1,0 +1,28 @@
+<<<<<<< HEAD
+This is the windows 10 alt. The CSS animations work on Windows but refuse to work on Linux. T
+
+6/13/2019
+=======
+
+====
+Module 5 Update 06/13/2019
+Before, our home controller was hardcoded to accepted one request, which it then wired to our view at home.jsp.
+
+What if we want more? 
+Here, we config the Controller object to a full scope new model object called alien. We then have our simple home controller ship the values of the alien to our home.jsp.
+
+This is done via the regular expression ${obj.value}
+
+Use sample to test the values in this case.
+
+http://localhost:9090/home?aid=1&aname=David&lang=java
+
+====
+Custom Update 2
+Adding a project name via the maven, so that we can docker-build from here on.
+
+====
+Custom Update 3
+Ever bored with the standard output of the tutorials, I decided to add some CSS to spice things up.
+
+>>>>>>> 4922b80f62b2457bcd4171a2b06803e4fae95d9a
