@@ -8,6 +8,14 @@ public class Alien {
 	private String aname;
 	private String lang;
 	
+	
+	
+	public Alien() {
+		this.aid = 1;
+		this.aname = "Hello Worlder";
+		this.lang = "Java";
+	}
+	
 	public int getAid() {
 		return aid;
 	}
