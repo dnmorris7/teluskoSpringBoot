@@ -44,9 +44,9 @@
 			<header>
 				<h1>Rotating Words <span>with CSS Animations</span></h1>
 				<nav class="codrops-demos">
-					<a class="current-demo" href="index.html">Demo 1</a>
-					<a href="index2.html">Demo 2</a>
-					<a href="index3.html">Demo 3</a>
+					<a class="current-demo" href="home">Demo 1</a>
+					<a href="index2">Demo 2</a>
+					<a href="index3">Demo 3</a>
 					<a href="index4.html">Demo 4</a>
 					<a href="index5.html">Demo 5</a>
 				</nav>

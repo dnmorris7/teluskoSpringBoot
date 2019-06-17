@@ -13,10 +13,13 @@
 	<artifactId>davidonusSpringDemo1</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>davidonusSpringDemo1</name>
+	<packaging>war</packaging>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
 		<java.version>1.8</java.version>
+		<junit.platform.version>1.2.0</junit.platform.version>
+		<junit.jupiter.version>5.2.0</junit.jupiter.version>
 	</properties>
 
 	<profiles>
@@ -25,12 +28,22 @@
 		</profile>
 	</profiles>
 
+
 	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.4</version>
+				<configuration>
+					<warSourceDirectory>src/main/webapp/</warSourceDirectory>
+					<failOnMissingWebXml>java </failOnMissingWebXml>
+				</configuration>
+			</plugin>
+
 		</plugins>
 	</build>
 
@@ -106,9 +119,16 @@
 			<version>3.9</version>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-war-plugin -->
+		<dependency>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-war-plugin</artifactId>
+			<version>3.2.3</version>
+		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-security -->
 		<!-- <dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-security</artifactId> 
 			<version>2.1.5.RELEASE</version> </dependency> -->
-			
+
 	</dependencies>
 </project>
