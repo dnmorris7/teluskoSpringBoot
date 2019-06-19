@@ -25,4 +25,14 @@ Adding a project name via the maven, so that we can docker-build from here on.
 Custom Update 3
 Ever bored with the standard output of the tutorials, I decided to add some CSS to spice things up.
 
+====
+Update 4
+6/18/2019
+Dockerfile fully composed, tested, and confirmed to work within Linux environment. 
+
+USE THE FOLLOWING COMMANDS TO DOCKERIZE AND RUN
+sudo docker build -t appname:v1 .
+
+sudo docker run -it -d -p 9090:9090 appname:v1
+
 >>>>>>> 4922b80f62b2457bcd4171a2b06803e4fae95d9a
